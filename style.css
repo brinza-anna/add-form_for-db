@@ -1,0 +1,67 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.app-container {
+  grid-column: 8 span;
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+.insert-form,
+.search-area {
+  background-color: #343a40;
+  color: white;
+}
+
+.insert-form {
+  padding: 20px;
+}
+
+.title {
+  width: 100%;
+}
+
+.btn.btn-primary {
+  background-color: rgb(21, 144, 92);
+  border: none;
+}
+
+.search-area {
+  grid-column: 4 span;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.search-area__title {
+  margin-bottom: 10px;
+}
+
+.search-area__label {
+  width: 100%;
+}
+
+.search-area__input {
+  width: 100%;
+}
+
+.table-bordered {
+  max-width: 100%;
+  grid-column: 12 span;
+}
+
+tbody {
+  background-color: #ffff;
+}
+th {
+  transition: outline 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+th:hover {
+  outline: 1px solid rgb(21, 144, 92);
+  opacity: 0.7;
+}
